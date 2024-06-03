@@ -40,6 +40,9 @@ function changeBack() {
     }
 }
 
+window.addEventListener('load', changeBack);
+window.addEventListener('resize', changeBack);
+
 // создание карточек
 const objectCard = {
 arrImg : ["./img/GgridImg1.svg", "./img/GgridImg2.svg", "./img/GgridImg3.svg", "./img/GgridImg4.svg", "./img/GgridImg5.svg", "./img/GgridImg6.svg", "./img/GgridImg7.svg"],
@@ -107,6 +110,8 @@ function checkVisibility() {
     }
 }
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
     checkVisibility();
     changePosition();
@@ -122,32 +127,32 @@ window.addEventListener('scroll', function() {
 });
 
 
-// появляение бургерной кнопки (убрано)
-// const burgerButton = document.querySelector('.burger');
-// const burgerMenu = document.querySelector('.burger-menu');
-// const modal = document.querySelector('.modal__outside');
-// const modalClosed = document.querySelector('.modal-button');
-// const header = document.querySelector('.header');
+// появляение бургерной кнопки
+const burgerButton = document.querySelector('.burger');
+const burgerMenu = document.querySelector('.burger-menu');
+const modal = document.querySelector('.modal__outside');
+const modalClosed = document.querySelector('.modal-button');
+const header = document.querySelector('.header');
 
-// function handelBurger() {
-//     burgerButton.classList.toggle('active');
-// }
+function handelBurger() {
+    burgerButton.classList.toggle('active');
+}
 
-// burgerButton.addEventListener('click', handelBurger);
+burgerButton.addEventListener('click', handelBurger);
 
-// const closedModal = function() {
-//     modal.style.display = 'none'
-//     burgerButton.style.display = 'block'
-//     header.style.zIndex = 2
-// }
+const closedModal = function() {
+    modal.style.display = 'none'
+    burgerButton.style.display = 'block'
+    header.style.zIndex = 2
+}
 
-// modalClosed.addEventListener('click', function() {
-//     closedModal()
-// });
+modalClosed.addEventListener('click', function() {
+    closedModal()
+});
 
-// burgerButton.addEventListener('click', function() {
-//     modal.style.display = 'block'
-//         burgerButton.style.display = 'none'
-//         header.style.zIndex = -1
-//         handelBurger()
-// })
+burgerButton.addEventListener('click', function() {
+    modal.style.display = 'block'
+        burgerButton.style.display = 'none'
+        header.style.zIndex = -1
+        handelBurger()
+})
