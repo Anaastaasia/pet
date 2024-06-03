@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./img/logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<body>
+    <img id="backGround" src="./img/Group 1242 (5).png" alt="" class="header-background">
+
+
+    <header class="header"> 
+        <div class="header-conteiner">
+            <a class="header-logo" href="/">
+                <img class="header-logo-image" src="./img/logo.svg" alt="Logo" />
+            </a>
+            <nav class="header-menu">
+                <ul class="header-menu-list">
+                    <li class="header-menu-item">
+                        <a href="#linkTechnologies" class="item">Чему вы научитесь</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a href="#linkStudy" class="item">Процесс обучения</a>
+                    </li>
+                    <li class="header-menu-item"> 
+                        <a href="#linkCost" class="item">Стоимость</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a href="#linkContacts" class="item">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- бургер меню, которое не вписывалось в дизайн и я решила убрать
+                <div class="burger-menu"> 
+                <div class="burger-icon"></div>
+                <ul class="burger-menu-list">
+                    <li class="burger-menu-item">
+                        <a href="#linkTechnologies" class="item">Чему вы научитесь</a>
+                    </li>
+                    <li class="burger-menu-item">
+                        <a href="#linkStudy" class="item">Процесс обучения</a>
+                    </li>
+                    <li class="burger-menu-item">
+                        <a href="#linkCost" class="item">Стоимость</a>
+                    </li>
+                    <li class="burger-menu-item">
+                        <a href="#linkContacts" class="item">Контакты</a>
+                    </li>
+                </ul>
+            </div> -->
+
+            
+
+            <div class="burger-button">
+                <button id="burger" class="burger">
+                <i class="it"></i>
+                <i class="it"></i>
+                <i class="it"></i>
+                </button>
+            </div>
+            
+            <div class="account">
+                <a href="#" class="account-entry account-entry__header">Вход</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <section class="containerOne">
+        <div class="blockOne">
+                <div class="blockOne-text">
+                    <header class="blockOne-header header-text">
+                        Школа <b><span class="orange">{</span><b>программирования</b><span class="orange">}</span></b><br>для тех, кому нужны реальные навыки,<br>а не просто сертификат
+                    </header>
+                    <div class="text">
+                        Пройдите тестирование, чтобы получить доступ<br>к бесплатным вводным урокам
+                    </div>
+                    <a href="#" class="button-start hovers">
+                        Пройти тестирование
+                    </a>
+                </div>
+        </div>
+    </section>
+    <section id="linkTechnologies" class="containerTwo">
+        <div class="blockTwo">
+            <header class="header-text">Какие технологии вы изучите:</header>
+            <div class="cardGray">
+                <div class="cardGray-inner">
+                    <img class="blockTwo-img" src="./img/blockTwo.svg">
+                    <div class="cardGray-technolog">
+                        <div class="cardGray-technolog-flex">
+                            <p class="flex-item1 flex-items__padding">
+                                Язык программирования Python
+                            </p>
+                            <p class="flex-item2 flex-items__padding">
+                                Сети
+                            </p>
+                            <p class="flex-item3 flex-items__padding">
+                                Базы данных
+                            </p>
+                            <p class="flex-item4 flex-items__padding">
+                                Фреймворки Flask и Django
+                            </p>
+                            <p class="flex-item5 flex-items__padding">
+                                Отладка и тестирование
+                            </p>
+                            <p class="flex-item6 flex-items__padding">
+                                Docker
+                            </p>
+                            <p class="flex-item7 flex-items__padding">
+                                Git
+                            </p>
+                        </div>
+                        <div class="boldText textStart">
+                            Это необходимый минимум для<br>современного backend-разработчика
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="containerThree">
+        <div class="blockThree">
+            <header class="header-text">Обучение в YtYt – это<br>удобно и результативно
+            </header>
+            <div class="blockThree-cards">
+                <div class="blockThree-cards-inner">
+                    <div  class="blockThree-cards-grid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="linkStudy" class="containerFour">
+        <div class="blockFour">
+            <header class="header-text textCenter">
+                Как происходит обучение на YtYt?
+            </header>
+            <p class="text textCenter">
+                Обучение должно быть комфортным. Поэтому мы разработали собственную платформу для обучения программированию.<br>На ней вы можете не только изучать теорию, но и запускать готовые примеры и даже писать свой собственный код.
+            </p>
+            <a href="#" id="link-laptopVideo">
+                <div class="laptopVideo">
+                    <img class="laptopVideo-img" src="./img/laptopVideo.svg">
+                    </button>
+                </div>
+            </a>
+            <div class="blockFour-steps">
+                <div class="step">
+                    <div class="step-number">
+                        01
+                    </div>
+                    <header class="step-title">
+                        Весь материал разбит на небольшие уроки
+                    </header>
+                    <div class="step-text textStart">
+                        Теория и практика подаются маленькими порциями. Так вам будет легче усваивать новые знания.
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">
+                        02
+                    </div>
+                    <header class="step-title">
+                        Обучение через практику
+                    </header>
+                    <div class="step-text textStart">
+                        Всё, что вы узнали, вы тут же начинаете применять на практике. Вы сразу видите результаты своего труда.
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">
+                        03
+                    </div>
+                    <header class="step-title">
+                        Нет ограничений по времени
+                    </header>
+                    <div class="step-text textStart">
+                        Можно совмещать учёбу с работой и другими делами. Не нужно выпрашивать академический отпуск, если пришлось сделать перерыв.
+                    </div>
+                </div>
+            </div>
+
+            <div class="blockFour-button-container">
+                    <a href="#" class="blockFour-button hovers">
+                        Начать обучение
+                    </a>
+                
+                <p class="blockFour-button-text">
+                    Попробуйте, первые уроки бесплатны, но нужно пройти тестирование
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="conteinerFive">
+        <div class="blockFive">
+            <div class="blockFive-grid">
+                <div id='fiveGrid-item1' class="grid-item grid-item__left">
+                    <img src="./img/grid5img1.svg"  class="grid-img">
+                </div>
+                <div id='fiveGrid-item2' class="grid-item grid-item__left">
+                    <header class="grid-item-header">
+                        Помощь и поддержка
+                    </header>
+                    <div class="grid-item-text">
+                        Если в процессе обучения возникнут сложности, вы всегда сможете задать вопрос своему наставнику. 
+                        <br>Раз в несколько уроков вы будете получать большое задание, которое нужно будет сдавать на проверку код-ревьюеру. Он внимательно изучит ваш код, найдет ошибки и поможет вам стать лучше. 
+                    </div>
+                </div>
+                <div id='fiveGrid-item3' class="grid-item grid-item__right">
+                    <header class="grid-item-header">
+                        Методика обучения
+                    </header>
+                    <div class="grid-item-text">
+                        Весь учебный материал структурирован по принципу «спирального обучения». Сначала вы получаете базовые знания, а затем на каждом витке спирали углубляетесь в изученные темы, доводя их понимание до совершенства. Такой подход упрощает обучение и гарантирует, что вы не пропустите ничего важного.
+                    </div>
+                </div>
+                <div id='fiveGrid-item4' class="grid-item grid-item__right">
+                    <img src="./img/grid5img2.svg" class="grid-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="linkCost" class="containerSix">
+        <div class="blockSix">
+            <header class="header-text textCenter">
+                Стоимость обучения
+            </header>
+            <div class="blockSix-grid">
+                <div id="blockSix-grid-item1" class="blockSix-grid-item">
+                    <img src="./img/block7img1.svg" class="blockSix-grid-img">
+                    <p class="blockSix-grid-text">
+                        Весь курс разбит на несколько блоков. Оплата поэтапная вы платите только за тот блок, который сейчас проходите.
+                    </p>
+                </div>
+                <div id="blockSix-grid-item2" class="blockSix-grid-item">
+                    <img src="./img/block7img2.svg" class="blockSix-grid-img">
+                    <p class="blockSix-grid-text">
+                        Любой из блоков вы можете оплатить в рассрочку
+                    </p>
+                </div>
+                <div id="blockSix-grid-item3" class="blockSix-grid-item">
+                    <img src="./img/block7img3.svg" class="blockSix-grid-img">
+                    <p class="blockSix-grid-text">
+                        Если передумаете учиться, то возврат можно оформить в любой момент. Возвращаем деньги за 3 рабочих дня.
+                    </p>
+                </div>
+            </div>
+                <div class="blockSix-table">
+                    <div class="table-row tabel-header">
+                    <div class="table-cell table-cell__borderLeft">Блок</div>
+                    <div class="table-cell table-cell__borderRight">Стоимость</div>
+                    </div>
+                    <div class="table-row__gray tabel-text">
+                    <div class="table-cell table-cell__borderLeft">Введение в программирование</div>
+                    <div class="table-cell table-cell__borderRight">Бесплатно</div>
+                    </div>
+                    <div class="table-row tabel-text">
+                    <div class="table-cell table-cell__borderLeft">Основы программирования на Python</div>
+                    <div class="table-cell table-cell__borderRight">9 900</div>
+                    </div>
+                    <div class="table-row__gray tabel-text">
+                    <div class="table-cell table-cell__borderLeft">Python, продвинутый уровень</div>
+                    <div class="table-cell table-cell__borderRight">14 900</div>
+                    </div>
+                    <div class="table-row tabel-text">
+                    <div class="table-cell table-cell__borderLeft">Сети + фреймворк Flask</div>
+                    <div class="table-cell table-cell__borderRight">14 900</div>
+                    </div>
+                    <div class="table-row__gray tabel-text">
+                    <div class="table-cell table-cell__borderLeft">Базы данных</div>
+                    <div class="table-cell table-cell__borderRight">14 900</div>
+                    </div>
+                    <div class="table-row tabel-text">
+                    <div class="table-cell table-cell__borderLeft">Фреймворк Django</div>
+                    <div class="table-cell table-cell__borderRight">14 900</div>
+                    </div>
+                    <div class="table-row__gray tabel-text">
+                    <div class="table-cell table-cell__borderLeft">Разработка «боевого» проекта</div>
+                    <div class="table-cell table-cell__borderRight">9 900</div>
+                    </div>
+                    <div class="table-row boldTextInTable">
+                    <div class="table-cell table-cell__borderLeft">Итого</div>
+                    <div class="table-cell table-cell__borderRight">79 400</div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</main>
+    <footer id="linkContacts" class="footer">
+        <div class="footer-inner">
+            <div class="footer-flex">
+                <div class="footer-social">
+                    <a href="#">
+                        <img class="footer-logo" src="./img/logoFooter.svg" alt="logo">
+                    </a>
+                    <div class="social">
+                        <a href="#">
+                            <img class="footer-img" src="./img/inst.svg">                                                                                                                             
+                        </a>
+                        <a href="#">
+                            <img class="footer-img" src="./img/vk.svg">
+                        </a>
+                        <a href="#">
+                            <img class="footer-img" src="./img/fb.svg">
+                        </a>
+                        <a href="#">
+                            <img class="footer-img" src="./img/yt.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-menu-contacts">
+                    <div class="footer-menu">
+                        <ul class="footer-menu-list">
+                            <li class="footer-menu-item">
+                                <a href="#linkTechnologies" class="footer-item item">Чему вы научитесь</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="#linkStudy" class="footer-item item">Процесс обучения</a>
+                            </li>
+                            <li class="footer-menu-item"> 
+                                <a href="#linkCost" class="footer-item item">Стоимость</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-contacts">
+                        <div class="footer-contact">
+                            <p class="footer-number">
+                                +7 (499) 338 94 36
+                            </p>
+                            <p class="footer-text">
+                                info@ytyt.ru
+                            </p>
+                        </div>
+                        <div>
+                            <p class="footer-text text__gray">
+                                ИП Умаров Н. С.
+                            </p>
+                            <p class="footer-text text__gray">
+                                ИНН 745285229809
+                            </p>
+                            <p class="footer-text text__gray">
+                                ОГРНИП 313845200007458
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal__outside">
+        <div class="modal">
+            <div class="modal-content">
+                <button class="modal-button">✖</button>
+                <div class="modal-content__container">
+                    <div class="modal-menu-list__container">
+                        <ul class="modal-menu-list">
+                            <li class="modal-menu-item">
+                                <a href="#linkTechnologies" class="item">Чему вы научитесь</a>
+                            </li>
+                            <li class="modal-menu-item">
+                                <a href="#linkStudy" class="item">Процесс обучения</a>
+                            </li>
+                            <li class="modal-menu-item"> 
+                                <a href="#linkCost" class="item">Стоимость</a>
+                            </li>
+                            <li class="modal-menu-item">
+                                <a href="#linkContacts" class="item">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <div class="modal_button_entry">
+                        <a href="#" class="account-entry account-entry__modal">Войти</a>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+    </div>
+<script src="js.js"></script>
+</body>
+
+</html>
