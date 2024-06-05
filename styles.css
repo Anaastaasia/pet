@@ -393,6 +393,9 @@ animation: fadeIn 1.5s ease-in-out 1 forwards;
     display: flex;
     justify-content: center;
     background-color: white;
+    -webkit-box-shadow: 0px 0px 8px 10px rgba(34, 60, 80, 0.05);
+-moz-box-shadow: 0px 0px 8px 10px rgba(34, 60, 80, 0.05);
+box-shadow: 0px 0px 8px 10px rgba(34, 60, 80, 0.05);
 
 }
 
@@ -542,6 +545,7 @@ animation: fadeIn 1.5s ease-in-out 1 forwards;
     flex-direction: column;
     align-items: center;
     background-color: white;
+    
 }
 
 .blockThree {
@@ -621,7 +625,11 @@ align-items: center;
     align-items: center;
     background-image: url(./img/back4.png);
     background-size: cover;
+    background-position: center;
     padding-bottom: 90px;
+    -webkit-box-shadow: 0px -13px 16px -13px rgba(34, 60, 80, 0.25);
+    -moz-box-shadow: 0px -13px 16px -13px rgba(34, 60, 80, 0.25);
+    box-shadow: 0px -13px 16px -13px rgba(34, 60, 80, 0.25);
 }
 
 .blockFour {
