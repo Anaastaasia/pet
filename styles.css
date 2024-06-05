@@ -75,7 +75,7 @@ svg * {
 .background_container {
     background-image: url(./img/Group12427.png);
     background-size: 160%;
-    height: 100vw;
+    height: 95vh;
     background-position: left -50vw;
     overflow: hidden;
     opacity: 0;
@@ -1083,12 +1083,18 @@ color: #FFFFFF;
 
 
 /* Медиа запросы */  
+
+@media (max-width: 1300px) {
+    .background_container {
+        height: 70vh;
+    }
+}
 @media (max-width: 1200px) {
     .header-conteiner {
         padding: 10px 10px 10px 10px;
     }
     .background_container {
-        height: 60vw;
+        height: 50vw;
     }
 } 
 @media (max-width: 1000px) {
@@ -1394,6 +1400,9 @@ color: #FFFFFF;
         opacity: 1;
         transform: translateX(0);
     }
+    .background_container {
+        background-position: center 25%;
+    }
 }
 
 @media (max-width: 440px) {
@@ -1408,7 +1417,7 @@ color: #FFFFFF;
 @media (max-width: 420px) {
 
     .background_container {
-        height: 73vh;
+        height: 170vw;
         background-position: center 12%;
     }
 }
@@ -1422,15 +1431,15 @@ color: #FFFFFF;
 
 @media (max-width: 376px) {
     .background_container {
-        height: 95vh;
+        height: 180vw;
         background-position: center 6%;
     }
 }
 
 @media (max-width: 365px) {
     .background_container {
-        height: 83vh;
-        background-position: center 2%;
+        height: 180vw;
+        background-position: center -5%;
     }
 }
 
