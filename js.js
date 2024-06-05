@@ -6,9 +6,7 @@ function isInViewport(element) {
 }
 
 const animBlock = function() {
-    const blockShow = document.querySelectorAll('.blockSix-table, .cardGray, .laptopVideo-img, .grid-item, .grid-item-outside, .step')
-
-
+    const blockShow = document.querySelectorAll('.blockSix-table, .cardGray, .laptopVideo-img, .grid-item, .grid-item-outside, .step, .background_container')
     function showBlock() {
         blockShow.forEach((item) => {
             if (isInViewport(item)) {
@@ -28,20 +26,6 @@ modalItems.forEach((item) => {
     item.addEventListener('click', (item) => closedModal());
 })
 
-//замена фона
-const back = document.getElementById('backGround');
-
-function changeBack() {
-    if(screen.width  <= 660) {
-        back.src ='./img/bacs.png'
-    }
-    else {
-        back.src ='./img/Group 1242 (5).png'
-    }
-}
-
-window.addEventListener('load', changeBack);
-window.addEventListener('resize', changeBack);
 
 // создание карточек
 const objectCard = {
@@ -115,14 +99,14 @@ function checkVisibility() {
 document.addEventListener('DOMContentLoaded', function() {
     checkVisibility();
     changePosition();
-    changeBack();
+    // changeBack();
     animBlock();
 });
 
 window.addEventListener('scroll', function() {
     checkVisibility();
     changePosition();
-    changeBack();
+    // changeBack();
     animBlock();
 });
 
@@ -153,6 +137,6 @@ modalClosed.addEventListener('click', function() {
 burgerButton.addEventListener('click', function() {
     modal.style.display = 'block'
         burgerButton.style.display = 'none'
-        header.style.zIndex = -1
+        header.style.zIndex = 0
         handelBurger()
 })

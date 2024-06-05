@@ -49,7 +49,6 @@ body {
     background: #ffffff;
     font-family: "PT Serif", serif;
     overflow-x: hidden;
-    width: 100vw;
     margin: 0;
 }
 svg *[fill] {
@@ -72,14 +71,20 @@ svg * {
 
 /* Шапка */
 
-.header-background {
-    position: absolute;
-    width: 99vw;
-    top: 55px;
-    z-index: -5;
+
+.background_container {
+    background-image: url(./img/Group12427.png);
+    background-size: 160%;
+    height: 100vw;
+    background-position: left -50vw;
+    overflow: hidden;
     opacity: 0;
-    animation: fadeIn 1.5s ease-in-out 1 forwards;
+    transition: opacity 2s ease;
 }
+.background_container.show {
+    opacity: 1;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -388,7 +393,7 @@ animation: fadeIn 1.5s ease-in-out 1 forwards;
     display: flex;
     justify-content: center;
     background-color: white;
-    margin-top: clamp(5rem, 0.658rem + 10.53vw, 12.5rem);
+
 }
 
 .blockTwo {
@@ -408,7 +413,7 @@ animation: fadeIn 1.5s ease-in-out 1 forwards;
     align-items: flex-end;
     justify-content: center;
     opacity: 0;
-transition: opacity 2s ease;
+    transition: opacity 2s ease;
 }
 .cardGray.show {
     opacity: 1;
@@ -965,6 +970,7 @@ color: #FFFFFF;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .footer-inner {
@@ -1081,6 +1087,9 @@ color: #FFFFFF;
     .header-conteiner {
         padding: 10px 10px 10px 10px;
     }
+    .background_container {
+        height: 60vw;
+    }
 } 
 @media (max-width: 1000px) {
     .header-logo {
@@ -1161,6 +1170,10 @@ color: #FFFFFF;
         font-size: clamp(0.625rem, 0.132rem + 2.11vw, 1.25rem); /*10-20*/
         line-height: clamp(0.625rem, -0.066rem + 2.95vw, 1.5rem); /*10-24*/
     }
+
+    .background_container {
+        height: 50vw;
+    }
 }
 
 @media (max-width: 700px) {
@@ -1196,7 +1209,7 @@ color: #FFFFFF;
     .header-background {
         width: 100%;
         left: 0;
-        margin-top: -40px;
+        margin-top: 200px;
     }
     .blockOne {
     display: flex;
@@ -1219,8 +1232,12 @@ color: #FFFFFF;
         height: 50px;
         font-size: 15px;
     }
-    .containerTwo {
-        margin-top: 350px;
+
+    .background_container {
+        background-image: url(./img/Group12426.png);
+        background-size: 160%;
+        height: 100vh;
+        background-position: center 30%;
     }
 }
 
@@ -1228,9 +1245,7 @@ color: #FFFFFF;
     .header-background {
         margin-top: 40px;
     }
-    .containerTwo {
-        margin-top: 320px;
-    }
+
     .blockTwo-img {
         display: none;
     }
@@ -1384,6 +1399,38 @@ color: #FFFFFF;
 @media (max-width: 440px) {
     .header-background {
         margin-top: 110px;
+    }
+    .background_container {
+        height: 73vh;
+        background-position: center 15%;
+    }
+}
+@media (max-width: 420px) {
+
+    .background_container {
+        height: 73vh;
+        background-position: center 12%;
+    }
+}
+
+@media (max-width: 395px) {
+    .background_container {
+        height: 75vh;
+        background-position: center 10%;
+    }
+}
+
+@media (max-width: 376px) {
+    .background_container {
+        height: 95vh;
+        background-position: center 6%;
+    }
+}
+
+@media (max-width: 365px) {
+    .background_container {
+        height: 83vh;
+        background-position: center 2%;
     }
 }
 
