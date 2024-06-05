@@ -99,14 +99,12 @@ function checkVisibility() {
 document.addEventListener('DOMContentLoaded', function() {
     checkVisibility();
     changePosition();
-    // changeBack();
     animBlock();
 });
 
 window.addEventListener('scroll', function() {
     checkVisibility();
     changePosition();
-    // changeBack();
     animBlock();
 });
 
